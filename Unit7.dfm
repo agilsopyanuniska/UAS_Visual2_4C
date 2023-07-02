@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 192
-  Top = 152
+  Left = 216
+  Top = 160
   Width = 928
   Height = 480
   Caption = 'Tambah Data Kelas'
@@ -11,6 +11,7 @@ object Form7: TForm7
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -65,6 +66,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Baru'
     TabOrder = 3
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 264
@@ -73,6 +75,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Simpan'
     TabOrder = 4
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 360
@@ -81,6 +84,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Edit'
     TabOrder = 5
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 456
@@ -89,6 +93,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Hapus'
     TabOrder = 6
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 552
@@ -97,6 +102,7 @@ object Form7: TForm7
     Height = 25
     Caption = 'Batal'
     TabOrder = 7
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 648
@@ -111,11 +117,41 @@ object Form7: TForm7
     Top = 192
     Width = 593
     Height = 137
+    DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 32
+    Top = 128
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3307
+    Database = 'sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
+    Left = 24
+    Top = 16
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from kelas')
+    Params = <>
+    Left = 32
+    Top = 72
   end
 end

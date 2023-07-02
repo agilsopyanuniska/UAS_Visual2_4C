@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 233
-  Top = 174
+  Left = 242
+  Top = 148
   Width = 928
   Height = 480
   Caption = 'Tambah Data Orang Tua'
@@ -11,6 +11,7 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -140,6 +141,9 @@ object Form3: TForm3
     ItemHeight = 13
     TabOrder = 7
     Text = 'cbb1'
+    Items.Strings = (
+      'Pria'
+      'Perempuan')
   end
   object cbb2: TComboBox
     Left = 456
@@ -149,6 +153,9 @@ object Form3: TForm3
     ItemHeight = 13
     TabOrder = 8
     Text = 'cbb2'
+    Items.Strings = (
+      'aktif'
+      'tidak aktif')
   end
   object btn1: TButton
     Left = 696
@@ -157,6 +164,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'BARU'
     TabOrder = 9
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 696
@@ -165,6 +173,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'SIMPAN'
     TabOrder = 10
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 696
@@ -173,6 +182,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'EDIT'
     TabOrder = 11
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 816
@@ -181,6 +191,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 12
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 816
@@ -189,6 +200,7 @@ object Form3: TForm3
     Height = 25
     Caption = 'BATAL'
     TabOrder = 13
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 816
@@ -203,11 +215,39 @@ object Form3: TForm3
     Top = 264
     Width = 777
     Height = 145
+    DataSource = ds1
     TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3307
+    Database = 'sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
+    Left = 312
+    Top = 48
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'select * from orang_tua')
+    Params = <>
+    Left = 312
+    Top = 96
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 312
+    Top = 152
   end
 end

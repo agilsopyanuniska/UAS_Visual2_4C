@@ -107,6 +107,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'Edit'
     TabOrder = 6
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 440
@@ -115,6 +116,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'Hapus'
     TabOrder = 7
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 536
@@ -126,9 +128,9 @@ object Form2: TForm2
     OnClick = btn5Click
   end
   object dbgrd1: TDBGrid
-    Left = 144
-    Top = 240
-    Width = 625
+    Left = 176
+    Top = 248
+    Width = 585
     Height = 120
     DataSource = ds1
     TabOrder = 9
@@ -137,6 +139,15 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object btn6: TButton
+    Left = 624
+    Top = 192
+    Width = 75
+    Height = 25
+    Caption = 'Cetak'
+    TabOrder = 10
   end
   object ds1: TDataSource
     DataSet = zqry1
@@ -147,10 +158,9 @@ object Form2: TForm2
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Connected = True
     HostName = 'localhost'
     Port = 3307
-    Database = 'tugas1visual2'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
@@ -159,7 +169,6 @@ object Form2: TForm2
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from user')
     Params = <>

@@ -11,6 +11,7 @@ object Form8: TForm8
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -73,6 +74,9 @@ object Form8: TForm8
     ItemHeight = 13
     TabOrder = 3
     Text = 'cbb1'
+    Items.Strings = (
+      'aktif'
+      'tidak aktif')
   end
   object btn1: TButton
     Left = 160
@@ -81,6 +85,7 @@ object Form8: TForm8
     Height = 25
     Caption = 'Baru'
     TabOrder = 4
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 256
@@ -89,6 +94,7 @@ object Form8: TForm8
     Height = 25
     Caption = 'Simpan'
     TabOrder = 5
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 352
@@ -97,6 +103,7 @@ object Form8: TForm8
     Height = 25
     Caption = 'Edit'
     TabOrder = 6
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 448
@@ -105,6 +112,7 @@ object Form8: TForm8
     Height = 25
     Caption = 'Hapus'
     TabOrder = 7
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 544
@@ -113,6 +121,7 @@ object Form8: TForm8
     Height = 25
     Caption = 'Batal'
     TabOrder = 8
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 640
@@ -123,15 +132,45 @@ object Form8: TForm8
     TabOrder = 9
   end
   object dbgrd1: TDBGrid
-    Left = 152
+    Left = 128
     Top = 248
-    Width = 593
+    Width = 657
     Height = 120
+    DataSource = ds1
     TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 56
+    Top = 152
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
+    Left = 56
+    Top = 24
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from poin')
+    Params = <>
+    Left = 56
+    Top = 88
   end
 end

@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 242
-  Top = 205
+  Left = 222
+  Top = 195
   Width = 928
   Height = 480
   Caption = 'Tambah Data Siswa'
@@ -319,16 +319,15 @@ object Form1: TForm1
     Connected = True
     HostName = 'localhost'
     Port = 3307
-    Database = 'tugas1visual2'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
+    LibraryLocation = 'libmysql.dll'
     Left = 32
     Top = 88
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from siswa')
     Params = <>
@@ -704,7 +703,7 @@ object Form1: TForm1
       'begin'
       ''
       'end.')
-    Left = 432
+    Left = 456
     Top = 152
     Datasets = <
       item

@@ -11,6 +11,7 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -106,6 +107,9 @@ object Form6: TForm6
     ItemHeight = 13
     TabOrder = 2
     Text = 'cbb1'
+    Items.Strings = (
+      'aktif'
+      'tidak aktif')
   end
   object edt3: TEdit
     Left = 192
@@ -162,6 +166,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Baru'
     TabOrder = 9
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 640
@@ -178,6 +183,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Simpan'
     TabOrder = 11
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 352
@@ -186,6 +192,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Edit'
     TabOrder = 12
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 448
@@ -194,6 +201,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Hapus'
     TabOrder = 13
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 544
@@ -202,17 +210,48 @@ object Form6: TForm6
     Height = 25
     Caption = 'Batal'
     TabOrder = 14
+    OnClick = btn6Click
   end
   object dbgrd1: TDBGrid
     Left = 160
     Top = 232
     Width = 609
     Height = 120
+    DataSource = ds1
     TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 432
+    Top = 120
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3307
+    Database = 'sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
+    Left = 376
+    Top = 56
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from wali_kelas')
+    Params = <>
+    Left = 432
+    Top = 64
   end
 end
