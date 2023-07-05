@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, DBGrids, DB, ZAbstractRODataset, ZAbstractDataset,
-  ZDataset, ZAbstractConnection, ZConnection, StdCtrls;
+  ZDataset, ZAbstractConnection, ZConnection, StdCtrls, frxClass, frxDBSet;
 
 type
   TForm2 = class(TForm)
@@ -27,6 +27,8 @@ type
     zqry1: TZQuery;
     dbgrd1: TDBGrid;
     btn6: TButton;
+    frxrprt1: TfrxReport;
+    frxdbdtst1: TfrxDBDataset;
     procedure FormShow(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure bersih;
@@ -38,6 +40,7 @@ type
     procedure btn3Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure btn4Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -189,6 +192,11 @@ sql;
 ShowMessage('Data Berhasil Terhapus');
 posisiawal;
 end;
+end;
+
+procedure TForm2.btn6Click(Sender: TObject);
+begin
+frxrprt1.ShowReport();
 end;
 
 end.
