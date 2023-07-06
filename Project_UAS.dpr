@@ -13,12 +13,16 @@ uses
   Unit9 in 'Unit9.pas' {Form9},
   Unit10 in 'Unit10.pas' {Form10},
   Unit11 in 'Unit11.pas' {Form11},
-  Unit12 in 'Unit12.pas' {Form12};
+  Unit12 in 'Unit12.pas' {Form12},
+  Unit13 in 'Unit13.pas' {Form13},
+  Unit14 in 'Unit14.pas' {Form14},
+  Unit15 in 'Unit15.pas' {Form15};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm13, Form13);
   Application.CreateForm(TForm10, Form10);
   Application.CreateForm(TForm11, Form11);
   Application.CreateForm(TForm2, Form2);
@@ -31,5 +35,7 @@ begin
   Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TForm14, Form14);
+  Application.CreateForm(TForm15, Form15);
   Application.Run;
 end.
