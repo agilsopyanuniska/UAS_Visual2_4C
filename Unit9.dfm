@@ -3,7 +3,7 @@ object Form9: TForm9
   Top = 152
   Width = 928
   Height = 480
-  Caption = 'MENU USER'
+  Caption = 'MENU ADMIN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -79,6 +79,9 @@ object Form9: TForm9
       object RiwayatPoin1: TMenuItem
         Caption = 'Riwayat Poin'
       end
+      object User1: TMenuItem
+        Caption = 'User'
+      end
     end
     object Query1: TMenuItem
       Caption = 'Query'
@@ -87,6 +90,9 @@ object Form9: TForm9
       end
       object LIKE1: TMenuItem
         Caption = 'LIKE'
+      end
+      object SELECT1: TMenuItem
+        Caption = 'SELECT (*)'
       end
     end
   end

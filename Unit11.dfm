@@ -24,9 +24,16 @@ object Form11: TForm11
   object lbl2: TLabel
     Left = 216
     Top = 128
-    Width = 139
+    Width = 145
     Height = 13
-    Caption = 'Buat Passwor Anda             : '
+    Caption = 'Buat Password Anda             : '
+  end
+  object lbl3: TLabel
+    Left = 216
+    Top = 168
+    Width = 143
+    Height = 13
+    Caption = 'Masukkan Level Anda            :'
   end
   object edt1: TEdit
     Left = 368
@@ -45,8 +52,8 @@ object Form11: TForm11
     Text = 'edt2'
   end
   object btn1: TButton
-    Left = 296
-    Top = 168
+    Left = 272
+    Top = 216
     Width = 75
     Height = 25
     Caption = 'DAFTAR'
@@ -54,13 +61,25 @@ object Form11: TForm11
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 432
-    Top = 168
+    Left = 376
+    Top = 216
     Width = 75
     Height = 25
-    Caption = 'BATAL'
+    Caption = 'KEMBALI'
     TabOrder = 3
     OnClick = btn2Click
+  end
+  object cbb1: TComboBox
+    Left = 368
+    Top = 168
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 4
+    Text = 'cbb1'
+    Items.Strings = (
+      '1'
+      '2')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

@@ -3,7 +3,7 @@ object Form12: TForm12
   Top = 152
   Width = 928
   Height = 480
-  Caption = 'MENU ADMIN'
+  Caption = 'MENU USER'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

@@ -17,6 +17,8 @@ type
     zqry1: TZQuery;
     btn1: TButton;
     btn2: TButton;
+    lbl3: TLabel;
+    cbb1: TComboBox;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -37,13 +39,13 @@ uses Unit10;
 
 procedure TForm11.btn2Click(Sender: TObject);
 begin
-Form10.ShowModal;
+Form10.Show;
 end;
 
 procedure TForm11.btn1Click(Sender: TObject);
 begin
 zqry1.SQL.Clear;
-zqry1.SQL.Add('insert into user values(null,"'+edt1.Text+'","'+edt2.Text+'",null,null)');
+zqry1.SQL.Add('insert into user values(null,"'+edt1.Text+'","'+edt2.Text+'","'+cbb1.Text+'",null)');
 zqry1.ExecSQL;
 
 ShowMessage('Daftar Sudah Berhasil');
@@ -53,6 +55,7 @@ procedure TForm11.FormShow(Sender: TObject);
 begin
 edt1.Clear;
 edt2.Clear;
+cbb1.Text := '';
 end;
 
 end.
