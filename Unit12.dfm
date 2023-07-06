@@ -1,9 +1,9 @@
-object Form9: TForm9
+object Form12: TForm12
   Left = 192
   Top = 152
   Width = 928
   Height = 480
-  Caption = 'MENU USER'
+  Caption = 'MENU ADMIN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -54,39 +54,18 @@ object Form9: TForm9
     ParentFont = False
   end
   object mm1: TMainMenu
-    Left = 24
+    Left = 48
     Top = 16
-    object ambah1: TMenuItem
-      Caption = 'Tambah Data'
-      object Siswa1: TMenuItem
-        Caption = 'Siswa'
-      end
-      object Ortu1: TMenuItem
-        Caption = 'Ortu'
-      end
-      object WaliKelas1: TMenuItem
-        Caption = 'Wali Kelas'
-      end
-      object Kelas1: TMenuItem
-        Caption = 'Kelas'
-      end
-      object Poin1: TMenuItem
-        Caption = 'Poin'
-      end
-      object Hubungan1: TMenuItem
-        Caption = 'Hubungan'
-      end
-      object RiwayatPoin1: TMenuItem
-        Caption = 'Riwayat Poin'
-      end
-    end
-    object Query1: TMenuItem
-      Caption = 'Query'
-      object JOIN1: TMenuItem
+    object QUERYYANGAKANDIGUNAKAN1: TMenuItem
+      Caption = 'QUERY YANG AKAN DIGUNAKAN'
+      object SELECT1: TMenuItem
         Caption = 'JOIN'
       end
       object LIKE1: TMenuItem
         Caption = 'LIKE'
+      end
+      object SELECT2: TMenuItem
+        Caption = 'SELECT (*)'
       end
     end
   end

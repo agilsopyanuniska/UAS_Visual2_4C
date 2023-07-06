@@ -18,6 +18,8 @@ type
     btn1: TButton;
     btn2: TButton;
     procedure btn2Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,11 +31,28 @@ var
 
 implementation
 
+uses Unit10;
+
 {$R *.dfm}
 
 procedure TForm11.btn2Click(Sender: TObject);
 begin
 Form10.ShowModal;
+end;
+
+procedure TForm11.btn1Click(Sender: TObject);
+begin
+zqry1.SQL.Clear;
+zqry1.SQL.Add('insert into user values(null,"'+edt1.Text+'","'+edt2.Text+'",null,null)');
+zqry1.ExecSQL;
+
+ShowMessage('Daftar Sudah Berhasil');
+end;
+
+procedure TForm11.FormShow(Sender: TObject);
+begin
+edt1.Clear;
+edt2.Clear;
 end;
 
 end.
