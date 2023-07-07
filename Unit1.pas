@@ -50,8 +50,6 @@ type
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
     chk1: TCheckBox;
-    frxrprt2: TfrxReport;
-    frxdbdtst2: TfrxDBDataset;
     btn6: TButton;
     procedure btn1Click(Sender: TObject);
     procedure bersih;
@@ -66,8 +64,6 @@ type
     procedure btn4Click(Sender: TObject);
     procedure chk1Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
-    procedure frxrprt2ClickObject(View: TfrxView; Button: TMouseButton;
-      Shift: TShiftState; var Modified: Boolean);
   private
     { Private declarations }
   public
@@ -321,16 +317,4 @@ begin
 frxrprt1.ShowReport();
 end;
 
-procedure TForm1.frxrprt2ClickObject(View: TfrxView;
-  Button: TMouseButton; Shift: TShiftState; var Modified: Boolean);
-begin
-if View.Name = 'Memo10' then
-begin
-  zqry1.SQL.Clear;
-  zqry1.SQL.Add('select * from siswa where nama_siswa="'+view.TagStr+'"');
-  zqry1.Open;
-
-  frxrprt2.ShowReport();
-end;
-end;
 end.

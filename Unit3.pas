@@ -40,8 +40,6 @@ type
     ds1: TDataSource;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
-    frxrprt2: TfrxReport;
-    frxdbdtst2: TfrxDBDataset;
     procedure FormShow(Sender: TObject);
     procedure bersih;
     procedure ukuran;
