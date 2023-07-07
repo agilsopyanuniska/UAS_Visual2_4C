@@ -30,6 +30,7 @@ type
     edt4: TEdit;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl5: TLabel;
     procedure FormShow(Sender: TObject);
     procedure bersih;
     procedure ukuran;

@@ -16,63 +16,63 @@ object Form6: TForm6
   TextHeight = 13
   object lbl1: TLabel
     Left = 128
-    Top = 24
+    Top = 85
     Width = 38
     Height = 13
     Caption = 'NIK/NIP'
   end
   object lbl2: TLabel
     Left = 128
-    Top = 56
+    Top = 117
     Width = 27
     Height = 13
     Caption = 'Nama'
   end
   object lbl3: TLabel
     Left = 128
-    Top = 88
+    Top = 149
     Width = 63
     Height = 13
     Caption = 'Jenis Kelamin'
   end
   object lbl4: TLabel
     Left = 128
-    Top = 128
+    Top = 189
     Width = 51
     Height = 13
     Caption = 'Pendidikan'
   end
   object lbl5: TLabel
     Left = 528
-    Top = 24
+    Top = 85
     Width = 20
     Height = 13
     Caption = 'Telp'
   end
   object lbl6: TLabel
     Left = 528
-    Top = 56
+    Top = 117
     Width = 33
     Height = 13
     Caption = 'Alamat'
   end
   object lbl7: TLabel
     Left = 528
-    Top = 88
+    Top = 149
     Width = 72
     Height = 13
     Caption = 'Mata Pelajaran'
   end
   object lbl8: TLabel
     Left = 528
-    Top = 128
+    Top = 189
     Width = 31
     Height = 13
     Caption = 'Status'
   end
   object lbl9: TLabel
     Left = 352
-    Top = 16
+    Top = 77
     Width = 14
     Height = 29
     Caption = '/'
@@ -83,9 +83,22 @@ object Form6: TForm6
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object lbl10: TLabel
+    Left = 376
+    Top = 32
+    Width = 159
+    Height = 23
+    Caption = 'FORM WALI KELAS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 192
-    Top = 24
+    Top = 85
     Width = 153
     Height = 21
     TabOrder = 0
@@ -93,7 +106,7 @@ object Form6: TForm6
   end
   object edt2: TEdit
     Left = 376
-    Top = 24
+    Top = 85
     Width = 121
     Height = 21
     TabOrder = 1
@@ -101,7 +114,7 @@ object Form6: TForm6
   end
   object cbb1: TComboBox
     Left = 616
-    Top = 128
+    Top = 189
     Width = 145
     Height = 21
     ItemHeight = 13
@@ -113,7 +126,7 @@ object Form6: TForm6
   end
   object edt3: TEdit
     Left = 192
-    Top = 88
+    Top = 149
     Width = 153
     Height = 21
     TabOrder = 3
@@ -121,7 +134,7 @@ object Form6: TForm6
   end
   object edt4: TEdit
     Left = 616
-    Top = 24
+    Top = 85
     Width = 153
     Height = 21
     TabOrder = 4
@@ -129,7 +142,7 @@ object Form6: TForm6
   end
   object edt5: TEdit
     Left = 616
-    Top = 56
+    Top = 117
     Width = 153
     Height = 21
     TabOrder = 5
@@ -137,7 +150,7 @@ object Form6: TForm6
   end
   object edt6: TEdit
     Left = 616
-    Top = 88
+    Top = 149
     Width = 153
     Height = 21
     TabOrder = 6
@@ -145,7 +158,7 @@ object Form6: TForm6
   end
   object edt7: TEdit
     Left = 192
-    Top = 56
+    Top = 117
     Width = 153
     Height = 21
     TabOrder = 7
@@ -153,7 +166,7 @@ object Form6: TForm6
   end
   object edt8: TEdit
     Left = 192
-    Top = 128
+    Top = 189
     Width = 153
     Height = 21
     TabOrder = 8
@@ -161,7 +174,7 @@ object Form6: TForm6
   end
   object btn1: TButton
     Left = 160
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Baru'
@@ -170,7 +183,7 @@ object Form6: TForm6
   end
   object btn2: TButton
     Left = 640
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -179,7 +192,7 @@ object Form6: TForm6
   end
   object btn3: TButton
     Left = 256
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -188,7 +201,7 @@ object Form6: TForm6
   end
   object btn4: TButton
     Left = 352
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -197,7 +210,7 @@ object Form6: TForm6
   end
   object btn5: TButton
     Left = 448
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -206,7 +219,7 @@ object Form6: TForm6
   end
   object btn6: TButton
     Left = 544
-    Top = 184
+    Top = 245
     Width = 75
     Height = 25
     Caption = 'Batal'
@@ -215,7 +228,7 @@ object Form6: TForm6
   end
   object dbgrd1: TDBGrid
     Left = 160
-    Top = 232
+    Top = 293
     Width = 609
     Height = 120
     DataSource = ds1
@@ -230,7 +243,7 @@ object Form6: TForm6
   object ds1: TDataSource
     DataSet = zqry1
     Left = 432
-    Top = 120
+    Top = 181
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -244,7 +257,7 @@ object Form6: TForm6
     Protocol = 'mysql'
     LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
     Left = 376
-    Top = 56
+    Top = 117
   end
   object zqry1: TZQuery
     Connection = con1
@@ -253,7 +266,7 @@ object Form6: TForm6
       'select * from wali_kelas')
     Params = <>
     Left = 432
-    Top = 64
+    Top = 125
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
@@ -271,7 +284,7 @@ object Form6: TForm6
       ''
       'end.')
     Left = 376
-    Top = 104
+    Top = 165
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -683,6 +696,6 @@ object Form6: TForm6
     DataSet = zqry1
     BCDToCurrency = False
     Left = 472
-    Top = 128
+    Top = 189
   end
 end

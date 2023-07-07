@@ -29,6 +29,7 @@ type
     btn6: TButton;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl5: TLabel;
     procedure FormShow(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure bersih;

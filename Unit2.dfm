@@ -16,35 +16,48 @@ object Form2: TForm2
   TextHeight = 13
   object lbl1: TLabel
     Left = 144
-    Top = 32
+    Top = 74
     Width = 27
     Height = 13
     Caption = 'Nama'
   end
   object lbl2: TLabel
     Left = 144
-    Top = 64
+    Top = 106
     Width = 46
     Height = 13
     Caption = 'Password'
   end
   object lbl3: TLabel
     Left = 144
-    Top = 96
+    Top = 138
     Width = 25
     Height = 13
     Caption = 'Level'
   end
   object lbl4: TLabel
     Left = 144
-    Top = 136
+    Top = 178
     Width = 31
     Height = 13
     Caption = 'Status'
   end
+  object lbl5: TLabel
+    Left = 424
+    Top = 24
+    Width = 102
+    Height = 23
+    Caption = 'FORM USER'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 216
-    Top = 32
+    Top = 74
     Width = 209
     Height = 21
     TabOrder = 0
@@ -52,7 +65,7 @@ object Form2: TForm2
   end
   object edt2: TEdit
     Left = 216
-    Top = 64
+    Top = 106
     Width = 209
     Height = 21
     TabOrder = 1
@@ -60,7 +73,7 @@ object Form2: TForm2
   end
   object cbb1: TComboBox
     Left = 216
-    Top = 96
+    Top = 138
     Width = 209
     Height = 21
     ItemHeight = 13
@@ -72,7 +85,7 @@ object Form2: TForm2
   end
   object cbb2: TComboBox
     Left = 216
-    Top = 136
+    Top = 178
     Width = 209
     Height = 21
     ItemHeight = 13
@@ -84,7 +97,7 @@ object Form2: TForm2
   end
   object btn1: TButton
     Left = 176
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Baru'
@@ -93,7 +106,7 @@ object Form2: TForm2
   end
   object btn2: TButton
     Left = 264
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -102,7 +115,7 @@ object Form2: TForm2
   end
   object btn3: TButton
     Left = 352
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -111,7 +124,7 @@ object Form2: TForm2
   end
   object btn4: TButton
     Left = 440
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -120,7 +133,7 @@ object Form2: TForm2
   end
   object btn5: TButton
     Left = 536
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Batal'
@@ -129,7 +142,7 @@ object Form2: TForm2
   end
   object dbgrd1: TDBGrid
     Left = 176
-    Top = 248
+    Top = 290
     Width = 585
     Height = 120
     DataSource = ds1
@@ -143,7 +156,7 @@ object Form2: TForm2
   end
   object btn6: TButton
     Left = 624
-    Top = 192
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -153,7 +166,7 @@ object Form2: TForm2
   object ds1: TDataSource
     DataSet = zqry1
     Left = 72
-    Top = 280
+    Top = 322
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -167,7 +180,7 @@ object Form2: TForm2
     Protocol = 'mysql'
     LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
     Left = 64
-    Top = 160
+    Top = 202
   end
   object zqry1: TZQuery
     Connection = con1
@@ -176,7 +189,7 @@ object Form2: TForm2
       'select * from user')
     Params = <>
     Left = 72
-    Top = 224
+    Top = 266
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
@@ -194,7 +207,7 @@ object Form2: TForm2
       ''
       'end.')
     Left = 568
-    Top = 48
+    Top = 90
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -428,6 +441,6 @@ object Form2: TForm2
     DataSet = zqry1
     BCDToCurrency = False
     Left = 568
-    Top = 104
+    Top = 146
   end
 end

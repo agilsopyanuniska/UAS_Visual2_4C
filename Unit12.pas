@@ -16,6 +16,7 @@ type
     SELECT1: TMenuItem;
     LIKE1: TMenuItem;
     SELECT2: TMenuItem;
+    lbl4: TLabel;
   private
     { Private declarations }
   public

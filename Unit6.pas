@@ -40,6 +40,7 @@ type
     zqry1: TZQuery;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl10: TLabel;
     procedure FormShow(Sender: TObject);
     procedure bersih;
     procedure ukuran;

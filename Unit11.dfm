@@ -35,6 +35,19 @@ object Form11: TForm11
     Height = 13
     Caption = 'Masukkan Level Anda            :'
   end
+  object lbl4: TLabel
+    Left = 304
+    Top = 24
+    Width = 124
+    Height = 23
+    Caption = 'FORM DAFTAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 368
     Top = 80

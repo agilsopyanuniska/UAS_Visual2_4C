@@ -16,35 +16,48 @@ object Form4: TForm4
   TextHeight = 13
   object lbl1: TLabel
     Left = 120
-    Top = 16
+    Top = 66
     Width = 126
     Height = 13
     Caption = 'STATUS HUBUNGAN ANAK'
   end
   object lbl2: TLabel
     Left = 120
-    Top = 64
+    Top = 114
     Width = 66
     Height = 13
     Caption = 'KETERANGAN'
   end
   object lbl3: TLabel
     Left = 120
-    Top = 96
+    Top = 146
     Width = 41
     Height = 13
     Caption = 'Siswa ID'
   end
   object lbl4: TLabel
     Left = 120
-    Top = 128
+    Top = 178
     Width = 36
     Height = 13
     Caption = 'Ortu ID'
   end
+  object lbl5: TLabel
+    Left = 376
+    Top = 16
+    Width = 154
+    Height = 23
+    Caption = 'FORM HUBUNGAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object edt1: TEdit
     Left = 264
-    Top = 16
+    Top = 66
     Width = 161
     Height = 21
     TabOrder = 0
@@ -52,7 +65,7 @@ object Form4: TForm4
   end
   object edt2: TEdit
     Left = 264
-    Top = 56
+    Top = 106
     Width = 161
     Height = 21
     TabOrder = 1
@@ -60,7 +73,7 @@ object Form4: TForm4
   end
   object btn1: TButton
     Left = 96
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Baru'
@@ -69,7 +82,7 @@ object Form4: TForm4
   end
   object btn2: TButton
     Left = 192
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -78,7 +91,7 @@ object Form4: TForm4
   end
   object btn3: TButton
     Left = 288
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -87,7 +100,7 @@ object Form4: TForm4
   end
   object btn4: TButton
     Left = 384
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -96,7 +109,7 @@ object Form4: TForm4
   end
   object btn5: TButton
     Left = 480
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Batal'
@@ -105,7 +118,7 @@ object Form4: TForm4
   end
   object btn6: TButton
     Left = 576
-    Top = 184
+    Top = 234
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -114,7 +127,7 @@ object Form4: TForm4
   end
   object dbgrd1: TDBGrid
     Left = 96
-    Top = 248
+    Top = 298
     Width = 633
     Height = 137
     DataSource = ds1
@@ -128,7 +141,7 @@ object Form4: TForm4
   end
   object edt3: TEdit
     Left = 264
-    Top = 88
+    Top = 138
     Width = 121
     Height = 21
     TabOrder = 9
@@ -136,7 +149,7 @@ object Form4: TForm4
   end
   object edt4: TEdit
     Left = 264
-    Top = 128
+    Top = 178
     Width = 121
     Height = 21
     TabOrder = 10
@@ -145,7 +158,7 @@ object Form4: TForm4
   object ds1: TDataSource
     DataSet = zqry1
     Left = 16
-    Top = 168
+    Top = 218
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -159,7 +172,7 @@ object Form4: TForm4
     Protocol = 'mysql'
     LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
     Left = 16
-    Top = 64
+    Top = 114
   end
   object zqry1: TZQuery
     Connection = con1
@@ -168,7 +181,7 @@ object Form4: TForm4
       'select * from hubungan')
     Params = <>
     Left = 16
-    Top = 112
+    Top = 162
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
@@ -186,7 +199,7 @@ object Form4: TForm4
       ''
       'end.')
     Left = 568
-    Top = 40
+    Top = 90
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -427,6 +440,6 @@ object Form4: TForm4
     DataSet = zqry1
     BCDToCurrency = False
     Left = 576
-    Top = 96
+    Top = 146
   end
 end

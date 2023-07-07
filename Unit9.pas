@@ -25,6 +25,7 @@ type
     lbl3: TLabel;
     SELECT1: TMenuItem;
     User1: TMenuItem;
+    lbl4: TLabel;
   private
     { Private declarations }
   public

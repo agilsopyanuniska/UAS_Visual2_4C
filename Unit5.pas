@@ -39,6 +39,7 @@ type
     lbl8: TLabel;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl9: TLabel;
     procedure bersih;
     procedure ukuran;
     procedure posisiawal;

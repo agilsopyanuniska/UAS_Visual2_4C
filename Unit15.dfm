@@ -13,4 +13,17 @@ object Form15: TForm15
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object lbl1: TLabel
+    Left = 400
+    Top = 40
+    Width = 94
+    Height = 23
+    Caption = 'FORM LIKE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
 end

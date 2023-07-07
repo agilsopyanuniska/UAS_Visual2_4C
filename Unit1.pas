@@ -51,6 +51,7 @@ type
     frxdbdtst1: TfrxDBDataset;
     chk1: TCheckBox;
     btn6: TButton;
+    lbl15: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure bersih;
     procedure ukuran;

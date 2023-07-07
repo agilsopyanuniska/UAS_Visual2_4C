@@ -53,6 +53,19 @@ object Form9: TForm9
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object lbl4: TLabel
+    Left = 416
+    Top = 24
+    Width = 172
+    Height = 23
+    Caption = 'FORM MENU ADMIN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object mm1: TMainMenu
     Left = 24
     Top = 16

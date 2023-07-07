@@ -19,6 +19,7 @@ type
     btn2: TButton;
     lbl3: TLabel;
     cbb1: TComboBox;
+    lbl4: TLabel;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);

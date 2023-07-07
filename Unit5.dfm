@@ -16,63 +16,76 @@ object Form5: TForm5
   TextHeight = 13
   object lbl1: TLabel
     Left = 464
-    Top = 88
+    Top = 119
     Width = 38
     Height = 13
     Caption = 'Tanggal'
   end
   object lbl2: TLabel
     Left = 464
-    Top = 128
+    Top = 159
     Width = 45
     Height = 13
     Caption = 'Semester'
   end
   object lbl3: TLabel
     Left = 464
-    Top = 168
+    Top = 199
     Width = 31
     Height = 13
     Caption = 'Status'
   end
   object lbl4: TLabel
     Left = 136
-    Top = 40
+    Top = 71
     Width = 41
     Height = 13
     Caption = 'Siswa ID'
   end
   object lbl5: TLabel
     Left = 136
-    Top = 88
+    Top = 119
     Width = 34
     Height = 13
     Caption = 'Poin ID'
   end
   object lbl6: TLabel
     Left = 136
-    Top = 136
+    Top = 167
     Width = 34
     Height = 13
     Caption = 'Wali ID'
   end
   object lbl7: TLabel
     Left = 136
-    Top = 176
+    Top = 207
     Width = 36
     Height = 13
     Caption = 'Ortu ID'
   end
   object lbl8: TLabel
     Left = 464
-    Top = 40
+    Top = 71
     Width = 39
     Height = 13
     Caption = 'Kelas ID'
   end
+  object lbl9: TLabel
+    Left = 392
+    Top = 16
+    Width = 185
+    Height = 23
+    Caption = 'FORM RIWAYAT POIN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object dtp1: TDateTimePicker
     Left = 520
-    Top = 88
+    Top = 119
     Width = 186
     Height = 21
     Date = 45105.313345810190000000
@@ -81,7 +94,7 @@ object Form5: TForm5
   end
   object edt1: TEdit
     Left = 520
-    Top = 128
+    Top = 159
     Width = 185
     Height = 21
     TabOrder = 1
@@ -89,7 +102,7 @@ object Form5: TForm5
   end
   object cbb1: TComboBox
     Left = 520
-    Top = 168
+    Top = 199
     Width = 185
     Height = 21
     ItemHeight = 13
@@ -101,7 +114,7 @@ object Form5: TForm5
   end
   object btn1: TButton
     Left = 144
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Baru'
@@ -110,7 +123,7 @@ object Form5: TForm5
   end
   object btn2: TButton
     Left = 240
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -119,7 +132,7 @@ object Form5: TForm5
   end
   object btn3: TButton
     Left = 336
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -128,7 +141,7 @@ object Form5: TForm5
   end
   object btn4: TButton
     Left = 432
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -137,7 +150,7 @@ object Form5: TForm5
   end
   object btn5: TButton
     Left = 528
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Batal'
@@ -146,7 +159,7 @@ object Form5: TForm5
   end
   object btn6: TButton
     Left = 624
-    Top = 224
+    Top = 255
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -155,7 +168,7 @@ object Form5: TForm5
   end
   object dbgrd1: TDBGrid
     Left = 144
-    Top = 280
+    Top = 311
     Width = 569
     Height = 120
     DataSource = ds1
@@ -169,7 +182,7 @@ object Form5: TForm5
   end
   object chk1: TCheckBox
     Left = 720
-    Top = 88
+    Top = 119
     Width = 97
     Height = 17
     Caption = 'pilih'
@@ -178,7 +191,7 @@ object Form5: TForm5
   end
   object edt2: TEdit
     Left = 208
-    Top = 40
+    Top = 71
     Width = 121
     Height = 21
     TabOrder = 11
@@ -186,7 +199,7 @@ object Form5: TForm5
   end
   object edt3: TEdit
     Left = 208
-    Top = 88
+    Top = 119
     Width = 121
     Height = 21
     TabOrder = 12
@@ -194,7 +207,7 @@ object Form5: TForm5
   end
   object edt4: TEdit
     Left = 208
-    Top = 136
+    Top = 167
     Width = 121
     Height = 21
     TabOrder = 13
@@ -202,7 +215,7 @@ object Form5: TForm5
   end
   object edt5: TEdit
     Left = 208
-    Top = 176
+    Top = 207
     Width = 121
     Height = 21
     TabOrder = 14
@@ -210,7 +223,7 @@ object Form5: TForm5
   end
   object edt6: TEdit
     Left = 520
-    Top = 40
+    Top = 71
     Width = 153
     Height = 21
     TabOrder = 15
@@ -219,7 +232,7 @@ object Form5: TForm5
   object ds1: TDataSource
     DataSet = zqry1
     Left = 48
-    Top = 240
+    Top = 271
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -233,7 +246,7 @@ object Form5: TForm5
     Protocol = 'mysql'
     LibraryLocation = 'E:\Delphi-7\Tugas UAS_Visual 2_4C\libmysql.dll'
     Left = 40
-    Top = 120
+    Top = 151
   end
   object zqry1: TZQuery
     Connection = con1
@@ -242,7 +255,7 @@ object Form5: TForm5
       'select * from riwayat_poin')
     Params = <>
     Left = 48
-    Top = 184
+    Top = 215
   end
   object frxrprt1: TfrxReport
     Version = '4.12.6'
@@ -260,7 +273,7 @@ object Form5: TForm5
       ''
       'end.')
     Left = 376
-    Top = 72
+    Top = 103
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -619,6 +632,6 @@ object Form5: TForm5
     DataSet = zqry1
     BCDToCurrency = False
     Left = 376
-    Top = 128
+    Top = 159
   end
 end

@@ -30,6 +30,7 @@ type
     zqry1: TZQuery;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl5: TLabel;
     procedure bersih;
     procedure ukuran;
     procedure posisiawal;
