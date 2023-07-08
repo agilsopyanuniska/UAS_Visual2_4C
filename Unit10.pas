@@ -24,6 +24,7 @@ type
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure posisiawal;
   private
     { Private declarations }
   public
@@ -53,40 +54,36 @@ zqry1.ParamByName('password').AsString := edt2.Text;
 zqry1.ParamByName('level').AsString := cbb1.Text;
 zqry1.Open;
 
-if cbb1.Text = '1' then
+if (cbb1.Text = '1') and (cbb1.Text = zqry1.Fields[3].AsString) and (edt1.Text = zqry1.Fields[1].AsString) and (edt2.Text = zqry1.Fields[2].AsString) then
   begin
-    if zqry1.FieldByName('level').AsString = '1' then
-    begin
       ShowMessage('Login berhasil sebagai admin!');
-      Form9.ShowModal;
-      Form10.Close;
-    end
-    else
-    begin
-      lbl1.Caption := 'Anda tidak memiliki hak akses sebagai admin!';
-    end;
+      posisiawal;
+      Form9.Show;
   end
-else if cbb1.Text = '2' then
+else if (cbb1.Text = '2') and (cbb1.Text = zqry1.Fields[3].AsString) and (edt1.Text = zqry1.Fields[1].AsString) and (edt2.Text = zqry1.Fields[2].AsString)  then
   begin
-    if zqry1.FieldByName('level').AsString = '2' then
-    begin
-
       ShowMessage('Login berhasil sebagai user!');
-      Form12.ShowModal;
-      Form10.Close;
-    end;
+      posisiawal;
+      Form12.Show;
   end
 else
 begin
-  lbl4.Caption := 'Username atau password salah!';
+  lbl4.Caption := 'Anda blm terdaftar!';
 end;
+
 end;
 
 procedure TForm10.FormShow(Sender: TObject);
 begin
+posisiawal;
+end;
+
+procedure TForm10.posisiawal;
+begin
 edt1.Clear;
 edt2.Clear;
 cbb1.Text := '';
+lbl4.Caption := '';
 end;
 
 end.

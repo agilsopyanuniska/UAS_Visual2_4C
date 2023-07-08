@@ -216,11 +216,11 @@ object Form3: TForm3
     OnClick = btn5Click
   end
   object btn6: TButton
-    Left = 816
+    Left = 808
     Top = 193
-    Width = 75
+    Width = 83
     Height = 25
-    Caption = 'CETAK'
+    Caption = 'VIEW REPORT'
     TabOrder = 14
     OnClick = btn6Click
   end

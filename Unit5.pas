@@ -79,7 +79,15 @@ end;
 
 procedure TForm5.chk1Click(Sender: TObject);
 begin
+if chk1.Checked = True then
+begin
 dtp1.Enabled := True;
+end
+else
+begin
+  dtp1.Enabled := False;
+end;
+
 end;
 
 procedure TForm5.FormShow(Sender: TObject);
@@ -103,6 +111,7 @@ edt4.Enabled := False;
 edt5.Enabled := False;
 edt6.Enabled := False;
 cbb1.Enabled := False;
+chk1.Checked := False;
 ukuran;
 end;
 
@@ -173,6 +182,7 @@ btn3.Enabled := True;
 btn4.Enabled := True;
 btn5.Enabled := True;
 dtp1.Enabled := False;
+chk1.Checked := False;
 end;
 
 procedure TForm5.btn2Click(Sender: TObject);

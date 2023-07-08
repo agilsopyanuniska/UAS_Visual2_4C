@@ -141,7 +141,7 @@ object Form8: TForm8
     Top = 229
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 9
     OnClick = btn6Click
   end

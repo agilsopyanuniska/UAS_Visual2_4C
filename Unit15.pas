@@ -57,6 +57,7 @@ if cbb1.ItemIndex = 0 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('siswa_id');
 cbb2.Items.Add('nis');
 cbb2.Items.Add('nisn');
@@ -78,6 +79,7 @@ else if cbb1.ItemIndex = 1 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('ortu_id');
 cbb2.Items.Add('nama');
 cbb2.Items.Add('nik');
@@ -93,6 +95,7 @@ else if cbb1.ItemIndex = 2 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('wali_id');
 cbb2.Items.Add('nik');
 cbb2.Items.Add('nip');
@@ -108,6 +111,7 @@ else if cbb1.ItemIndex = 3 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('id');
 cbb2.Items.Add('siswa_id');
 cbb2.Items.Add('ortu_id');
@@ -118,6 +122,7 @@ else if cbb1.ItemIndex = 4 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('siswa_id');
 cbb2.Items.Add('id');
 cbb2.Items.Add('ortu_id');
@@ -132,6 +137,7 @@ else if cbb1.ItemIndex = 5 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('poin_id');
 cbb2.Items.Add('nama');
 cbb2.Items.Add('bobot');
@@ -142,6 +148,7 @@ else if cbb1.ItemIndex = 6 then
 begin
 cbb2.Text := '';
 cbb2.Items.Clear;
+edt1.Clear;
 cbb2.Items.Add('kelas_id');
 cbb2.Items.Add('nama');
 cbb2.Items.Add('jenis');

@@ -48,6 +48,11 @@ procedure TForm14.cbb1Change(Sender: TObject);
 begin
 if cbb1.ItemIndex = 0 then
 begin
+cbb2.Text := '';
+cbb3.Text := '';
+cbb4.Text := '';
+cbb5.Text := '';
+cbb6.Text := '';
 cbb2.Enabled := True;
 cbb3.Enabled := True;
 cbb4.Enabled := False;
@@ -56,6 +61,11 @@ cbb6.Enabled := False;
 end
 else if cbb1.ItemIndex = 1 then
 begin
+cbb2.Text := '';
+cbb3.Text := '';
+cbb4.Text := '';
+cbb5.Text := '';
+cbb6.Text := '';
 cbb4.Enabled := True;
 cbb5.Enabled := True;
 cbb6.Enabled := True;

@@ -121,7 +121,7 @@ object Form4: TForm4
     Top = 234
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 7
     OnClick = btn6Click
   end

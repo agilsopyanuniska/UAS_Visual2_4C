@@ -122,7 +122,7 @@ object Form7: TForm7
     Top = 212
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 8
     OnClick = btn6Click
   end

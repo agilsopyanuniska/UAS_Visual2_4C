@@ -186,7 +186,7 @@ object Form6: TForm6
     Top = 245
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 10
     OnClick = btn2Click
   end

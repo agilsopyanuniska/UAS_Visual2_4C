@@ -162,7 +162,7 @@ object Form5: TForm5
     Top = 255
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 8
     OnClick = btn6Click
   end

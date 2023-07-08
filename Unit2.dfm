@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 287
-  Top = 201
+  Left = 258
+  Top = 159
   Width = 928
   Height = 480
   Caption = 'Tambah Data User'
@@ -159,7 +159,7 @@ object Form2: TForm2
     Top = 234
     Width = 75
     Height = 25
-    Caption = 'Cetak'
+    Caption = 'VIEW REPORT'
     TabOrder = 10
     OnClick = btn6Click
   end

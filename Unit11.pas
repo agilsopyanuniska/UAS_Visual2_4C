@@ -41,6 +41,7 @@ uses Unit10;
 procedure TForm11.btn2Click(Sender: TObject);
 begin
 Form10.Show;
+Form11.Close;
 end;
 
 procedure TForm11.btn1Click(Sender: TObject);

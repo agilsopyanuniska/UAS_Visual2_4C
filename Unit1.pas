@@ -76,6 +76,8 @@ var
 
 implementation
 
+uses Unit10, Unit9;
+
 {$R *.dfm}
 
 procedure TForm1.bersih;
@@ -149,6 +151,7 @@ edt10.Text := zqry1.FieldList[11].AsString;
 edt11.Text := zqry1.FieldList[12].AsString;
 edt12.Text := zqry1.FieldList[13].AsString;
 cbb1.Text := zqry1.FieldList[14].AsString;
+chk1.Checked := False;
 edt1.Enabled := true;
 edt2.Enabled := True;
 edt3.Enabled := True;
@@ -210,6 +213,7 @@ edt11.Enabled := False;
 edt12.Enabled := False;
 cbb1.Enabled := False;
 ukuran;
+chk1.Checked := False;
 end;
 
 procedure TForm1.btn2Click(Sender: TObject);
@@ -310,7 +314,14 @@ end;
 end;
 procedure TForm1.chk1Click(Sender: TObject);
 begin
+if chk1.Checked = True then
+begin
 dtp1.Enabled:=True;
+end
+else
+begin
+dtp1.Enabled :=False;
+end;
 end;
 
 procedure TForm1.btn6Click(Sender: TObject);
