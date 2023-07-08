@@ -66,6 +66,15 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
   end
+  object btn1: TButton
+    Left = 784
+    Top = 8
+    Width = 97
+    Height = 57
+    Caption = 'Log Out'
+    TabOrder = 0
+    OnClick = btn1Click
+  end
   object mm1: TMainMenu
     Left = 24
     Top = 16
@@ -73,39 +82,50 @@ object Form9: TForm9
       Caption = 'Tambah Data'
       object Siswa1: TMenuItem
         Caption = 'Siswa'
+        OnClick = Siswa1Click
       end
       object Ortu1: TMenuItem
         Caption = 'Ortu'
+        OnClick = Ortu1Click
       end
       object WaliKelas1: TMenuItem
         Caption = 'Wali Kelas'
+        OnClick = WaliKelas1Click
       end
       object Kelas1: TMenuItem
         Caption = 'Kelas'
+        OnClick = Kelas1Click
       end
       object Poin1: TMenuItem
         Caption = 'Poin'
+        OnClick = Poin1Click
       end
       object Hubungan1: TMenuItem
         Caption = 'Hubungan'
+        OnClick = Hubungan1Click
       end
       object RiwayatPoin1: TMenuItem
         Caption = 'Riwayat Poin'
+        OnClick = RiwayatPoin1Click
       end
       object User1: TMenuItem
         Caption = 'User'
+        OnClick = User1Click
       end
     end
     object Query1: TMenuItem
       Caption = 'Query'
       object JOIN1: TMenuItem
         Caption = 'JOIN'
+        OnClick = JOIN1Click
       end
       object LIKE1: TMenuItem
         Caption = 'LIKE'
+        OnClick = LIKE1Click
       end
       object SELECT1: TMenuItem
         Caption = 'SELECT (*)'
+        OnClick = SELECT1Click
       end
     end
   end

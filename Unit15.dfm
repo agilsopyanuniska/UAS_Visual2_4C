@@ -1,6 +1,6 @@
 object Form15: TForm15
-  Left = 192
-  Top = 152
+  Left = 237
+  Top = 170
   Width = 928
   Height = 480
   Caption = 'Form LIKE'

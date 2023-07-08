@@ -66,6 +66,15 @@ object Form12: TForm12
     Font.Style = []
     ParentFont = False
   end
+  object btn1: TButton
+    Left = 784
+    Top = 16
+    Width = 83
+    Height = 41
+    Caption = 'Log Out'
+    TabOrder = 0
+    OnClick = btn1Click
+  end
   object mm1: TMainMenu
     Left = 48
     Top = 16
@@ -73,12 +82,15 @@ object Form12: TForm12
       Caption = 'QUERY YANG AKAN DIGUNAKAN'
       object SELECT1: TMenuItem
         Caption = 'JOIN'
+        OnClick = SELECT1Click
       end
       object LIKE1: TMenuItem
         Caption = 'LIKE'
+        OnClick = LIKE1Click
       end
       object SELECT2: TMenuItem
         Caption = 'SELECT (*)'
+        OnClick = SELECT2Click
       end
     end
   end
